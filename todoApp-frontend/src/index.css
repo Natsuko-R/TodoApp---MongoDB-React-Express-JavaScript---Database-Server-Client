@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #DFDFDF;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem;
+    width: 40rem;
+}
+
+/* ---------  顶部：添加 + 过滤  -------- */
+.header-wrap {
+    background-color: #f9f7ee;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 表单的输入框 */
+.input {
+    outline-style: none;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 0.5rem;
+    width: 90%;
+    font-size: 14px;
+}
+
+/* 表单的提交按钮 */
+.form-btn {
+    border: none;
+    background-color: transparent;
+    color: black;
+    padding: 0.5rem;
+}
+
+.form-btn:disabled {
+    cursor: not-allowed;
+}
+
+/* 仅显示未完成的label */
+.show-undone-wrap {
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+}
+
+/* ---------  中间：展示todo  -------- */
+.main-wrap {
+    background-color: #f9f7ee;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebdad3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    padding: 1rem;
+    border-radius: 0.3rem;
+}
+
+/* 禁止自动换行（不过设置了固定width后，这个没啥用了） */
+.nowrap {
+    white-space: nowrap
+}
+
+.update-input {
+    outline-style: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0.2rem 0.5rem;
+    font-size: 1rem;
+}
+
+/* 按钮 */
+.btn-wrap {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+/* ---------  底部：展示数据  -------- */
+.footer-wrap {
+    background-color: #f9f7ee;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    display: flex;
+    justify-content: space-between;
+}

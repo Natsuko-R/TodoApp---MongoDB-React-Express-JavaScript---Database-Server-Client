@@ -3,7 +3,7 @@
 
 ## Database : MongoDB / mongosh / MongoDB Altas / MongoDB Compass
 
-## Server : Express + mongoose
+## Server : Express / mongoose
 
 ## Client ： React / JavaScript 
 
